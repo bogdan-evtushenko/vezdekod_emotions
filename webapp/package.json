@@ -10,7 +10,10 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
+    "vue-horizontal-scroll": "^0.2.4",
     "vue-router": "^3.2.0",
+    "vue-swipeable-bottom-sheet": "0.0.5",
+    "vue-yandex-maps": "^0.10.9",
     "vuex": "^3.4.0"
   },
   "devDependencies": {
