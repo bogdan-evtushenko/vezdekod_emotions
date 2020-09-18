@@ -7,22 +7,27 @@
         >
             <ymap-marker
                     marker-id="123"
+                    marker-type="circle"
+                    :marker-fill="{color: '#FFF'}"
+                    circle-radius="1400"
+                    :balloon-template="balloonTemplate"
                     :coords="coords"
-                    :icon="markerIcon"
             />
         </yandex-map>
+        <bottom-sheet-layout/>
     </div>
 </template>
 
-<script lang="ts">
+<script lang="js">
     import Vue from 'vue';
     //@ts-ignore
     import {yandexMap, ymapMarker} from 'vue-yandex-maps';
     import config from "@/common/YMapConfig";
+    import BottomSheetLayout from "@/components/bottomSheet/BottomSheetLayout";
 
     export default Vue.extend({
         name: 'Home',
-        components: {yandexMap, ymapMarker},
+        components: {yandexMap, ymapMarker, BottomSheetLayout},
         mounted() {
             this.settings = config
         },
@@ -30,17 +35,16 @@
             return {
                 settings: {},
                 coords: [55.751244, 37.618423],
-                markerIcon: {
-                    layout: 'default#imageWithContent',
-                    imageHref: 'https://image.flaticon.com/icons/png/512/33/33447.png',
-                    imageSize: [55.751244, 37.618423],
-                    imageOffset: [0, 0],
-                    content: '123 v12',
-                    contentOffset: [0, 15],
-                    contentLayout: '<div style="background: red; width: 50px; color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-                }
             }
-        }
+        },
+        computed: {
+            balloonTemplate() {
+                return `
+                    <h1 class="red">Hi, everyone!</h1>
+                    <p>I am here: ${this.coords}</p>
+                  `
+            }
+        },
     });
 </script>
 
