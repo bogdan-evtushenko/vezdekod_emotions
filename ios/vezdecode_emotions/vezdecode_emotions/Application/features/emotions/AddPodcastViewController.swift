@@ -85,7 +85,7 @@ class AddPostViewController: ClosableUIViewController, UIImagePickerControllerDe
     private func setupPickerView() {
         pickerAdapter.run {
             $0.optionSelected = { position in
-                
+                self.sortTextField.text = self.pickerAdapter.options[position]
             }
             $0.options = ["Веселый", "Грустный", "Злой"]
         }
