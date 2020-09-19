@@ -11,7 +11,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
         android:gravity="center"
-        android:text="Включите интернет \nи попробуйте еще раз"
+        android:text="Создайте пост, кликнув по кнопке."
         android:textColor="@color/mine_shaft"
         android:textSize="18sp" />
 
@@ -22,6 +22,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
+        android:visibility="gone"
         android:layout_marginBottom="8dp"
         android:background="@drawable/button_blue_ripple_rounded_8"
         android:paddingStart="10dp"

@@ -10,14 +10,14 @@ class EmotionItemEpoxyModel(
     private val onClickListener: (Emotion) -> Unit
 ) : BaseEpoxyModel(R.layout.view_emotion_item) {
     init {
-        id("EmotionItemEpoxyModel", (1..1000).random().toString())
+        id("EmotionItemEpoxyModel", emotion.toString())
     }
 
     override fun bind(view: View): Unit = with(view) {
         super.bind(view)
         tvEmoji.text = getEmoji(Integer.parseInt(emotion.emoji, 16))
+        tvDescription.text = emotion.description
         parentLayout.setOnClickListener {
-            println("Here onClick")
             onClickListener(emotion)
         }
     }
