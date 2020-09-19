@@ -6,6 +6,10 @@
     android:layout_height="match_parent"
     tools:context=".ChooseEmotionActivity">
 
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_layout" />
+
     <com.airbnb.epoxy.EpoxyRecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
@@ -15,6 +19,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

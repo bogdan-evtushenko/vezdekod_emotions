@@ -11,7 +11,6 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
 
     private val epoxyController by lazy { EpoxyController {} }
-    private val progressBarDialog by lazy { ProgressBarDialog(this) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,30 +32,12 @@ class MainActivity : AppCompatActivity() {
         }
 
         epoxyController.requestModelBuild()
-
-        //progressBarDialog.show()
-        /*fetchPosts {
-            progressBarDialog.dismiss()
-            epoxyController.data = it
-        }*/
     }
 
-    /*private fun fetchPosts(onCompleteListener: (List<Post>) -> Unit) = GlobalScope.launch {
-        val response = try {
-            restClient.fetchDonations(2131558458).asDeferred()
-        } catch (e: CancellationException) {
-            null
-        } catch (t: Throwable) {
-            println("Error: ${t.message}")
-            null
-        }
-
-        println("Response Body: ${response?.body()}")
-
-        withContext(Dispatchers.Main) {
-            onCompleteListener(response?.body()!!.map { it.donation.apply { id = it.id } })
-        }
-    }*/
+    override fun onStart() {
+        super.onStart()
+        epoxyController.data = posts
+    }
 
     class EpoxyController(
         private val stubOnClickListener: () -> Unit
@@ -64,7 +45,7 @@ class MainActivity : AppCompatActivity() {
 
         override fun buildModels() {
             data?.forEach { post ->
-                //DonationItemEpoxyModel(donation).addTo(this)
+                PostItemEpoxyModel(post).addTo(this)
             }
 
             PostsStubEpoxyModel(stubOnClickListener).addIf(data.isNullOrEmpty(), this)

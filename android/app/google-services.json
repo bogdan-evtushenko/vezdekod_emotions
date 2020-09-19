@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "506788991340",
+    "firebase_url": "https://vkemotions.firebaseio.com",
+    "project_id": "vkemotions",
+    "storage_bucket": "vkemotions.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:506788991340:android:685672a631d6b4ac776349",
+        "android_client_info": {
+          "package_name": "com.example.vkemotions"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "506788991340-9t3dt830q9h4j6ps19arfriqr51j1o8a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkkzc34tyIygOcJ1QQPkZhLejWvGl6hG0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "506788991340-9t3dt830q9h4j6ps19arfriqr51j1o8a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
