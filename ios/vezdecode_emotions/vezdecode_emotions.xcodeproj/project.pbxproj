@@ -1,0 +1,638 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		638ECD202515FB5F00DD8C9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638ECD1F2515FB5F00DD8C9F /* AppDelegate.swift */; };
+		638ECD652515FC7400DD8C9F /* testImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 638ECD352515FC7400DD8C9F /* testImage.png */; };
+		638ECD662515FC7400DD8C9F /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 638ECD362515FC7400DD8C9F /* avatar.png */; };
+		638ECD672515FC7400DD8C9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 638ECD372515FC7400DD8C9F /* Assets.xcassets */; };
+		638ECD682515FC7400DD8C9F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 638ECD382515FC7400DD8C9F /* Localizable.strings */; };
+		638ECD692515FC7400DD8C9F /* SFProText-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 638ECD3A2515FC7400DD8C9F /* SFProText-Medium.ttf */; };
+		638ECD6A2515FC7500DD8C9F /* SFProText-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 638ECD3B2515FC7400DD8C9F /* SFProText-Semibold.ttf */; };
+		638ECD6B2515FC7500DD8C9F /* SFProText-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 638ECD3C2515FC7400DD8C9F /* SFProText-Regular.ttf */; };
+		638ECD6C2515FC7500DD8C9F /* TTCommons-DemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 638ECD3D2515FC7400DD8C9F /* TTCommons-DemiBold.ttf */; };
+		638ECD6D2515FC7500DD8C9F /* SFProDisplay-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 638ECD3E2515FC7400DD8C9F /* SFProDisplay-Semibold.ttf */; };
+		638ECD6E2515FC7500DD8C9F /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638ECD422515FC7400DD8C9F /* Palette.swift */; };
+		638ECD6F2515FC7500DD8C9F /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638ECD432515FC7400DD8C9F /* Font.swift */; };
+		638ECD702515FC7500DD8C9F /* ScopeFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638ECD452515FC7400DD8C9F /* ScopeFunc.swift */; };
+		638ECD712515FC7500DD8C9F /* TableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638ECD472515FC7400DD8C9F /* TableView+Extension.swift */; };
+		638ECD722515FC7500DD8C9F /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638ECD482515FC7400DD8C9F /* UITableViewCell+Extension.swift */; };
+		638ECD732515FC7500DD8C9F /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638ECD492515FC7400DD8C9F /* UIColor+Extension.swift */; };
+		638ECD742515FC7500DD8C9F /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638ECD4A2515FC7400DD8C9F /* UIView+Extension.swift */; };
+		638ECD752515FC7500DD8C9F /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638ECD4B2515FC7400DD8C9F /* UIViewController+Extension.swift */; };
+		638ECD762515FC7500DD8C9F /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638ECD4C2515FC7400DD8C9F /* String+Extension.swift */; };
+		638ECD772515FC7500DD8C9F /* AddPodcastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638ECD4F2515FC7400DD8C9F /* AddPodcastViewController.swift */; };
+		638ECD782515FC7500DD8C9F /* PodcastsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638ECD502515FC7400DD8C9F /* PodcastsViewController.swift */; };
+		638ECD792515FC7500DD8C9F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638ECD522515FC7400DD8C9F /* BaseViewController.swift */; };
+		638ECD7A2515FC7500DD8C9F /* ClosableUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638ECD532515FC7400DD8C9F /* ClosableUIViewController.swift */; };
+		638ECD7B2515FC7500DD8C9F /* CloseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638ECD552515FC7400DD8C9F /* CloseView.swift */; };
+		638ECD7C2515FC7500DD8C9F /* CommonButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638ECD572515FC7400DD8C9F /* CommonButton.swift */; };
+		638ECD7D2515FC7500DD8C9F /* BottomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638ECD582515FC7400DD8C9F /* BottomButton.swift */; };
+		638ECD7E2515FC7500DD8C9F /* TextInputLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638ECD5A2515FC7400DD8C9F /* TextInputLayout.swift */; };
+		638ECD7F2515FC7500DD8C9F /* CommonTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638ECD5B2515FC7400DD8C9F /* CommonTextField.swift */; };
+		638ECD802515FC7500DD8C9F /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638ECD5C2515FC7400DD8C9F /* CardView.swift */; };
+		638ECD812515FC7500DD8C9F /* PostCover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638ECD5D2515FC7400DD8C9F /* PostCover.swift */; };
+		638ECD822515FC7500DD8C9F /* BodyMediumLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638ECD5F2515FC7400DD8C9F /* BodyMediumLabel.swift */; };
+		638ECD832515FC7500DD8C9F /* BodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638ECD602515FC7400DD8C9F /* BodyLabel.swift */; };
+		638ECD842515FC7500DD8C9F /* HintLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638ECD612515FC7400DD8C9F /* HintLabel.swift */; };
+		638ECD852515FC7500DD8C9F /* CheckBoxLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638ECD632515FC7400DD8C9F /* CheckBoxLayout.swift */; };
+		638ECD862515FC7500DD8C9F /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638ECD642515FC7400DD8C9F /* CheckBox.swift */; };
+		89611C1C238558D836E7AA3F /* Pods_vezdecode_emotions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4DB3F416EA54CE10C53E59D /* Pods_vezdecode_emotions.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		34A10CE0AC86649EF7BF72C8 /* Pods-vezdecode_emotions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vezdecode_emotions.debug.xcconfig"; path = "Target Support Files/Pods-vezdecode_emotions/Pods-vezdecode_emotions.debug.xcconfig"; sourceTree = "<group>"; };
+		638ECD1C2515FB5F00DD8C9F /* vezdecode_emotions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vezdecode_emotions.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		638ECD1F2515FB5F00DD8C9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		638ECD2D2515FB6400DD8C9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		638ECD352515FC7400DD8C9F /* testImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = testImage.png; sourceTree = "<group>"; };
+		638ECD362515FC7400DD8C9F /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
+		638ECD372515FC7400DD8C9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		638ECD382515FC7400DD8C9F /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		638ECD3A2515FC7400DD8C9F /* SFProText-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Medium.ttf"; sourceTree = "<group>"; };
+		638ECD3B2515FC7400DD8C9F /* SFProText-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Semibold.ttf"; sourceTree = "<group>"; };
+		638ECD3C2515FC7400DD8C9F /* SFProText-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Regular.ttf"; sourceTree = "<group>"; };
+		638ECD3D2515FC7400DD8C9F /* TTCommons-DemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TTCommons-DemiBold.ttf"; sourceTree = "<group>"; };
+		638ECD3E2515FC7400DD8C9F /* SFProDisplay-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Semibold.ttf"; sourceTree = "<group>"; };
+		638ECD422515FC7400DD8C9F /* Palette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
+		638ECD432515FC7400DD8C9F /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		638ECD452515FC7400DD8C9F /* ScopeFunc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScopeFunc.swift; sourceTree = "<group>"; };
+		638ECD472515FC7400DD8C9F /* TableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TableView+Extension.swift"; sourceTree = "<group>"; };
+		638ECD482515FC7400DD8C9F /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
+		638ECD492515FC7400DD8C9F /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		638ECD4A2515FC7400DD8C9F /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		638ECD4B2515FC7400DD8C9F /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		638ECD4C2515FC7400DD8C9F /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		638ECD4F2515FC7400DD8C9F /* AddPodcastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPodcastViewController.swift; sourceTree = "<group>"; };
+		638ECD502515FC7400DD8C9F /* PodcastsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodcastsViewController.swift; sourceTree = "<group>"; };
+		638ECD522515FC7400DD8C9F /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		638ECD532515FC7400DD8C9F /* ClosableUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosableUIViewController.swift; sourceTree = "<group>"; };
+		638ECD552515FC7400DD8C9F /* CloseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloseView.swift; sourceTree = "<group>"; };
+		638ECD572515FC7400DD8C9F /* CommonButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonButton.swift; sourceTree = "<group>"; };
+		638ECD582515FC7400DD8C9F /* BottomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomButton.swift; sourceTree = "<group>"; };
+		638ECD5A2515FC7400DD8C9F /* TextInputLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputLayout.swift; sourceTree = "<group>"; };
+		638ECD5B2515FC7400DD8C9F /* CommonTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonTextField.swift; sourceTree = "<group>"; };
+		638ECD5C2515FC7400DD8C9F /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		638ECD5D2515FC7400DD8C9F /* PostCover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCover.swift; sourceTree = "<group>"; };
+		638ECD5F2515FC7400DD8C9F /* BodyMediumLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodyMediumLabel.swift; sourceTree = "<group>"; };
+		638ECD602515FC7400DD8C9F /* BodyLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodyLabel.swift; sourceTree = "<group>"; };
+		638ECD612515FC7400DD8C9F /* HintLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HintLabel.swift; sourceTree = "<group>"; };
+		638ECD632515FC7400DD8C9F /* CheckBoxLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBoxLayout.swift; sourceTree = "<group>"; };
+		638ECD642515FC7400DD8C9F /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		898BEEC6EB3B053037D26FED /* Pods-vezdecode_emotions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vezdecode_emotions.release.xcconfig"; path = "Target Support Files/Pods-vezdecode_emotions/Pods-vezdecode_emotions.release.xcconfig"; sourceTree = "<group>"; };
+		E4DB3F416EA54CE10C53E59D /* Pods_vezdecode_emotions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_vezdecode_emotions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		638ECD192515FB5F00DD8C9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89611C1C238558D836E7AA3F /* Pods_vezdecode_emotions.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		638ECD132515FB5F00DD8C9F = {
+			isa = PBXGroup;
+			children = (
+				638ECD1E2515FB5F00DD8C9F /* vezdecode_emotions */,
+				638ECD1D2515FB5F00DD8C9F /* Products */,
+				D3B39ACB5137DB9F20CDD486 /* Pods */,
+				EC5C5756F722099333594C8C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		638ECD1D2515FB5F00DD8C9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				638ECD1C2515FB5F00DD8C9F /* vezdecode_emotions.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		638ECD1E2515FB5F00DD8C9F /* vezdecode_emotions */ = {
+			isa = PBXGroup;
+			children = (
+				638ECD3F2515FC7400DD8C9F /* Application */,
+				638ECD332515FC7400DD8C9F /* Resources */,
+				638ECD1F2515FB5F00DD8C9F /* AppDelegate.swift */,
+				638ECD2D2515FB6400DD8C9F /* Info.plist */,
+			);
+			path = vezdecode_emotions;
+			sourceTree = "<group>";
+		};
+		638ECD332515FC7400DD8C9F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				638ECD342515FC7400DD8C9F /* images */,
+				638ECD372515FC7400DD8C9F /* Assets.xcassets */,
+				638ECD382515FC7400DD8C9F /* Localizable.strings */,
+				638ECD392515FC7400DD8C9F /* fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		638ECD342515FC7400DD8C9F /* images */ = {
+			isa = PBXGroup;
+			children = (
+				638ECD352515FC7400DD8C9F /* testImage.png */,
+				638ECD362515FC7400DD8C9F /* avatar.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		638ECD392515FC7400DD8C9F /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				638ECD3A2515FC7400DD8C9F /* SFProText-Medium.ttf */,
+				638ECD3B2515FC7400DD8C9F /* SFProText-Semibold.ttf */,
+				638ECD3C2515FC7400DD8C9F /* SFProText-Regular.ttf */,
+				638ECD3D2515FC7400DD8C9F /* TTCommons-DemiBold.ttf */,
+				638ECD3E2515FC7400DD8C9F /* SFProDisplay-Semibold.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		638ECD3F2515FC7400DD8C9F /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				638ECD402515FC7400DD8C9F /* core */,
+				638ECD4D2515FC7400DD8C9F /* features */,
+				638ECD542515FC7400DD8C9F /* components */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		638ECD402515FC7400DD8C9F /* core */ = {
+			isa = PBXGroup;
+			children = (
+				638ECD412515FC7400DD8C9F /* design */,
+				638ECD442515FC7400DD8C9F /* extensions */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		638ECD412515FC7400DD8C9F /* design */ = {
+			isa = PBXGroup;
+			children = (
+				638ECD422515FC7400DD8C9F /* Palette.swift */,
+				638ECD432515FC7400DD8C9F /* Font.swift */,
+			);
+			path = design;
+			sourceTree = "<group>";
+		};
+		638ECD442515FC7400DD8C9F /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				638ECD452515FC7400DD8C9F /* ScopeFunc.swift */,
+				638ECD462515FC7400DD8C9F /* tableView */,
+				638ECD492515FC7400DD8C9F /* UIColor+Extension.swift */,
+				638ECD4A2515FC7400DD8C9F /* UIView+Extension.swift */,
+				638ECD4B2515FC7400DD8C9F /* UIViewController+Extension.swift */,
+				638ECD4C2515FC7400DD8C9F /* String+Extension.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		638ECD462515FC7400DD8C9F /* tableView */ = {
+			isa = PBXGroup;
+			children = (
+				638ECD472515FC7400DD8C9F /* TableView+Extension.swift */,
+				638ECD482515FC7400DD8C9F /* UITableViewCell+Extension.swift */,
+			);
+			path = tableView;
+			sourceTree = "<group>";
+		};
+		638ECD4D2515FC7400DD8C9F /* features */ = {
+			isa = PBXGroup;
+			children = (
+				638ECD4E2515FC7400DD8C9F /* emotions */,
+				638ECD512515FC7400DD8C9F /* shared */,
+			);
+			path = features;
+			sourceTree = "<group>";
+		};
+		638ECD4E2515FC7400DD8C9F /* emotions */ = {
+			isa = PBXGroup;
+			children = (
+				638ECD4F2515FC7400DD8C9F /* AddPodcastViewController.swift */,
+				638ECD502515FC7400DD8C9F /* PodcastsViewController.swift */,
+			);
+			path = emotions;
+			sourceTree = "<group>";
+		};
+		638ECD512515FC7400DD8C9F /* shared */ = {
+			isa = PBXGroup;
+			children = (
+				638ECD522515FC7400DD8C9F /* BaseViewController.swift */,
+				638ECD532515FC7400DD8C9F /* ClosableUIViewController.swift */,
+			);
+			path = shared;
+			sourceTree = "<group>";
+		};
+		638ECD542515FC7400DD8C9F /* components */ = {
+			isa = PBXGroup;
+			children = (
+				638ECD552515FC7400DD8C9F /* CloseView.swift */,
+				638ECD562515FC7400DD8C9F /* buttons */,
+				638ECD592515FC7400DD8C9F /* textFields */,
+				638ECD5C2515FC7400DD8C9F /* CardView.swift */,
+				638ECD5D2515FC7400DD8C9F /* PostCover.swift */,
+				638ECD5E2515FC7400DD8C9F /* labels */,
+				638ECD622515FC7400DD8C9F /* checkbox */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		638ECD562515FC7400DD8C9F /* buttons */ = {
+			isa = PBXGroup;
+			children = (
+				638ECD572515FC7400DD8C9F /* CommonButton.swift */,
+				638ECD582515FC7400DD8C9F /* BottomButton.swift */,
+			);
+			path = buttons;
+			sourceTree = "<group>";
+		};
+		638ECD592515FC7400DD8C9F /* textFields */ = {
+			isa = PBXGroup;
+			children = (
+				638ECD5A2515FC7400DD8C9F /* TextInputLayout.swift */,
+				638ECD5B2515FC7400DD8C9F /* CommonTextField.swift */,
+			);
+			path = textFields;
+			sourceTree = "<group>";
+		};
+		638ECD5E2515FC7400DD8C9F /* labels */ = {
+			isa = PBXGroup;
+			children = (
+				638ECD5F2515FC7400DD8C9F /* BodyMediumLabel.swift */,
+				638ECD602515FC7400DD8C9F /* BodyLabel.swift */,
+				638ECD612515FC7400DD8C9F /* HintLabel.swift */,
+			);
+			path = labels;
+			sourceTree = "<group>";
+		};
+		638ECD622515FC7400DD8C9F /* checkbox */ = {
+			isa = PBXGroup;
+			children = (
+				638ECD632515FC7400DD8C9F /* CheckBoxLayout.swift */,
+				638ECD642515FC7400DD8C9F /* CheckBox.swift */,
+			);
+			path = checkbox;
+			sourceTree = "<group>";
+		};
+		D3B39ACB5137DB9F20CDD486 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34A10CE0AC86649EF7BF72C8 /* Pods-vezdecode_emotions.debug.xcconfig */,
+				898BEEC6EB3B053037D26FED /* Pods-vezdecode_emotions.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EC5C5756F722099333594C8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4DB3F416EA54CE10C53E59D /* Pods_vezdecode_emotions.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		638ECD1B2515FB5F00DD8C9F /* vezdecode_emotions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 638ECD302515FB6400DD8C9F /* Build configuration list for PBXNativeTarget "vezdecode_emotions" */;
+			buildPhases = (
+				EFEC6815461C43B00F9A8ED5 /* [CP] Check Pods Manifest.lock */,
+				638ECD182515FB5F00DD8C9F /* Sources */,
+				638ECD192515FB5F00DD8C9F /* Frameworks */,
+				638ECD1A2515FB5F00DD8C9F /* Resources */,
+				7D5C5CEE293063511750ABFD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = vezdecode_emotions;
+			productName = vezdecode_emotions;
+			productReference = 638ECD1C2515FB5F00DD8C9F /* vezdecode_emotions.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		638ECD142515FB5F00DD8C9F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = Den;
+				TargetAttributes = {
+					638ECD1B2515FB5F00DD8C9F = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = 638ECD172515FB5F00DD8C9F /* Build configuration list for PBXProject "vezdecode_emotions" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 638ECD132515FB5F00DD8C9F;
+			productRefGroup = 638ECD1D2515FB5F00DD8C9F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				638ECD1B2515FB5F00DD8C9F /* vezdecode_emotions */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		638ECD1A2515FB5F00DD8C9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				638ECD662515FC7400DD8C9F /* avatar.png in Resources */,
+				638ECD6D2515FC7500DD8C9F /* SFProDisplay-Semibold.ttf in Resources */,
+				638ECD682515FC7400DD8C9F /* Localizable.strings in Resources */,
+				638ECD6B2515FC7500DD8C9F /* SFProText-Regular.ttf in Resources */,
+				638ECD6C2515FC7500DD8C9F /* TTCommons-DemiBold.ttf in Resources */,
+				638ECD672515FC7400DD8C9F /* Assets.xcassets in Resources */,
+				638ECD652515FC7400DD8C9F /* testImage.png in Resources */,
+				638ECD692515FC7400DD8C9F /* SFProText-Medium.ttf in Resources */,
+				638ECD6A2515FC7500DD8C9F /* SFProText-Semibold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7D5C5CEE293063511750ABFD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vezdecode_emotions/Pods-vezdecode_emotions-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vezdecode_emotions/Pods-vezdecode_emotions-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-vezdecode_emotions/Pods-vezdecode_emotions-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFEC6815461C43B00F9A8ED5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-vezdecode_emotions-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		638ECD182515FB5F00DD8C9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				638ECD832515FC7500DD8C9F /* BodyLabel.swift in Sources */,
+				638ECD7D2515FC7500DD8C9F /* BottomButton.swift in Sources */,
+				638ECD792515FC7500DD8C9F /* BaseViewController.swift in Sources */,
+				638ECD752515FC7500DD8C9F /* UIViewController+Extension.swift in Sources */,
+				638ECD7C2515FC7500DD8C9F /* CommonButton.swift in Sources */,
+				638ECD732515FC7500DD8C9F /* UIColor+Extension.swift in Sources */,
+				638ECD822515FC7500DD8C9F /* BodyMediumLabel.swift in Sources */,
+				638ECD772515FC7500DD8C9F /* AddPodcastViewController.swift in Sources */,
+				638ECD7F2515FC7500DD8C9F /* CommonTextField.swift in Sources */,
+				638ECD852515FC7500DD8C9F /* CheckBoxLayout.swift in Sources */,
+				638ECD702515FC7500DD8C9F /* ScopeFunc.swift in Sources */,
+				638ECD7A2515FC7500DD8C9F /* ClosableUIViewController.swift in Sources */,
+				638ECD812515FC7500DD8C9F /* PostCover.swift in Sources */,
+				638ECD742515FC7500DD8C9F /* UIView+Extension.swift in Sources */,
+				638ECD722515FC7500DD8C9F /* UITableViewCell+Extension.swift in Sources */,
+				638ECD712515FC7500DD8C9F /* TableView+Extension.swift in Sources */,
+				638ECD7E2515FC7500DD8C9F /* TextInputLayout.swift in Sources */,
+				638ECD782515FC7500DD8C9F /* PodcastsViewController.swift in Sources */,
+				638ECD802515FC7500DD8C9F /* CardView.swift in Sources */,
+				638ECD202515FB5F00DD8C9F /* AppDelegate.swift in Sources */,
+				638ECD6E2515FC7500DD8C9F /* Palette.swift in Sources */,
+				638ECD762515FC7500DD8C9F /* String+Extension.swift in Sources */,
+				638ECD842515FC7500DD8C9F /* HintLabel.swift in Sources */,
+				638ECD6F2515FC7500DD8C9F /* Font.swift in Sources */,
+				638ECD862515FC7500DD8C9F /* CheckBox.swift in Sources */,
+				638ECD7B2515FC7500DD8C9F /* CloseView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		638ECD2E2515FB6400DD8C9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		638ECD2F2515FB6400DD8C9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		638ECD312515FB6400DD8C9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34A10CE0AC86649EF7BF72C8 /* Pods-vezdecode_emotions.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = vezdecode_emotions/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Den.vezdecode-emotions";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		638ECD322515FB6400DD8C9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 898BEEC6EB3B053037D26FED /* Pods-vezdecode_emotions.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = vezdecode_emotions/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Den.vezdecode-emotions";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		638ECD172515FB5F00DD8C9F /* Build configuration list for PBXProject "vezdecode_emotions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				638ECD2E2515FB6400DD8C9F /* Debug */,
+				638ECD2F2515FB6400DD8C9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		638ECD302515FB6400DD8C9F /* Build configuration list for PBXNativeTarget "vezdecode_emotions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				638ECD312515FB6400DD8C9F /* Debug */,
+				638ECD322515FB6400DD8C9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 638ECD142515FB5F00DD8C9F /* Project object */;
+}
